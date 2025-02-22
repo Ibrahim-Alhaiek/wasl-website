@@ -1,0 +1,191 @@
+/* 🔹 Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #033495, #6A9CFD);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 🔹 Setup & Auth Page Containers */
+.setup-container, .auth-container {
+    width: 90%;
+    max-width: 450px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 🔹 Headings */
+h1, h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #FFB8D0;
+}
+
+/* 🔹 Button Container */
+.auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adds space between buttons */
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* 🔹 Buttons */
+.auth-buttons button {
+    background-color: #FFB8D0;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%; /* Each button takes half width */
+}
+
+.auth-buttons button:hover {
+    background-color: #FE5E81;
+}
+
+/* 🔹 Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+/* 🔹 Input Fields */
+input, select {
+    padding: 12px;
+    width: 100%; /* Make all inputs full width */
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    text-align: left;
+    outline: none;
+    background: white;
+    color: black;
+}
+
+/* 🔹 Consent Section */
+.consent-section {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    font-size: 0.9rem;
+    gap: 10px;
+}
+
+/* 🔹 Checkbox Fix */
+.consent-section input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* 🔹 Links */
+p {
+    font-size: 0.95rem;
+}
+
+p a {
+    color: #FFB8D0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 Hide form initially */
+.hidden {
+    display: none;
+}
+
+
+/* 🔹 Buttons */
+button {
+    background-color: #FFB8D0;
+    color: white;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #FE5E81;
+}
+
+/* 🔹 Fix for Sign In & Sign Up Buttons in Setup Page */
+.auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.auth-buttons button {
+    width: 50%; /* Each button takes half width */
+}
+
+/* 🔹 Emergency Warning Box */
+.warning-box {
+    background: rgba(255, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+    border-left: 5px solid #ff3b3b81;
+}
+
+.warning-title {
+    color: #FE5E81;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.warning-box p {
+    font-size: 1rem;
+    color: white;
+}
+
+.emergency-highlight {
+    color: #ff3b3bd8;
+    font-weight: bold;
+}
+
+.warning-consent {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.warning-consent input {
+    width: 16px;
+    height: 16px;
+}

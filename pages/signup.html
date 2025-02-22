@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Wasl</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h1>wasl.</h1>
+        <form id="signupForm">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+            <input type="text" id="name" placeholder="Name" required>
+            <select id="age" required>
+                <option value="">Select Age</option>
+                <option value="under-18">Under 18</option>
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35+">35+</option>
+            </select>
+            <select id="country" required>
+                <option value="">Select Country</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="UAE">UAE</option>
+                <option value="Other">Other</option>
+            </select>
+            <div class="consent-section">
+                <input type="checkbox" id="consent" required>
+                <label for="consent">I agree to use Wasl under these terms.</label>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="signin.html">Log in</a></p>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

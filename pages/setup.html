@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup - Wasl</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="setup-container">
+        <h2>setup.</h2>
+
+        <!-- 🔹 Emergency Warning Section -->
+        <div class="warning-box">
+            <h3 class="warning-title">warning.</h3>
+            <p>
+                Please note: <strong>wasl.</strong> is 
+                <span class="emergency-highlight">NOT AN EMERGENCY SERVICE.</span>  
+                If you are in crisis, please contact the local helpline which we have provided for you under "SOS".
+            </p>
+            <div class="warning-consent">
+                <input type="checkbox" id="warningConsent">
+                <label for="warningConsent">I understand that <strong>wasl.</strong> does not provide emergency medical care.</label>
+            </div>
+        </div>
+
+        <!-- 🔹 Sign In and Sign Up Buttons -->
+        <div class="auth-buttons">
+            <button id="signInBtn">Sign In</button>
+            <button id="signUpBtn">Sign Up</button>
+        </div>
+
+        <!-- 🔹 Hidden Form (Appears When User Clicks "Sign Up") -->
+        <form id="setupForm" class="hidden">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+
+            <label for="age">Age</label>
+            <select id="age">
+                <option value="">Select Age</option>
+                <option value="under-18">Under 18</option>
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35+">35+</option>
+            </select>
+
+            <label for="country">Country</label>
+            <select id="country">
+                <option value="">Select Country</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="UAE">UAE</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <div class="consent-section">
+                <p>Do you consent?</p>
+                <input type="checkbox" id="consent">
+                <label for="consent">I agree to use Wasl under these terms.</label>
+            </div>
+
+            <button type="submit" id="continueBtn">Continue</button>
+        </form>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
